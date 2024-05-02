@@ -6,12 +6,12 @@
     list-style-type: none;
     scroll-behavior: smooth;
     cursor: pointer;
+
 }
 
+
 :root {
-    
     --bg: #1a0ec1;
-    ;
     --text-color: #fff;
     --main-bg:rgb(23, 3, 30);
 }
@@ -21,11 +21,11 @@
 }
 
 .header {
-    box-shadow: 10px 0 10px rgba(148, 15, 15, 0.1);
+    box-shadow: 10px 0 10px rgba(234, 223, 223, 0.1);
     width: 100%;
     position: fixed;
     color:white;
-    background-color:var(--main-bg);
+    background-color:blue;
     left: 0;
     top: 0;
     z-index: 1111;
@@ -33,6 +33,29 @@
     align-items: center;
     justify-content: space-around;
     padding: 20px 12%;
+}
+.cart-btn{
+    outline:none;
+    border: none;
+    font-size: 24px;
+    padding:0 6px;
+}
+ .fa-times{
+padding: 15px 25px;    
+border-radius: 8px;
+margin:10px;
+font-size: 332px;
+font-size: 32px;
+background-color: red;
+position: absolute;
+top:10px;
+right:0;
+}
+.section {
+    padding: 8% 8%;
+    color: white;
+    background-color: var(--main-bg);
+
 }
 
 .logo {
@@ -139,16 +162,12 @@
     padding: 8px 10px;
     border-radius: 5px;
     color: white;
+    gap: 0;
 }
 
-.section {
-    padding: 8% 8%;
-    color: white;
-    background-color: var(--main-bg);
 
-}
 #home{
-    padding: 3.1% 8%;
+    padding: 0 8%;
 
 }
 
@@ -213,7 +232,7 @@ span {
     color: var(--text-color)
 }
 
-.menu {
+.iconMenu .menu {
     display: none;
 }
 
@@ -221,6 +240,7 @@ span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    
 
 
 
@@ -235,7 +255,7 @@ span {
 
 }
 .services-box {
-   
+
     box-shadow: 10px 0 300px rgba(24, 47, 215, 0.5);
     /* background-color: var(--bg); */
     border-radius: 20px;
@@ -243,7 +263,6 @@ span {
     width: 100%;
     position: relative;
     text-align: center;
-    min-height: 100h;
     height: 100%;
     margin-bottom: 20px;
 
@@ -298,13 +317,22 @@ span {
     margin-top: -24px;
     margin-right: 3px;
     text-decoration: none;
+    
 }
+.up a:hover{
+    background-color: var(--bg);
+    color:var(--text-color);
+    border-radius: 32px;
+    
+}
+
 
 .home-image {
     width: 100%;
     z-index: 2;
     animation: lii 0.9s ease infinite
 }
+
 @keyframes lii {
     0%{
      transform: rotate(45deg);
@@ -331,14 +359,17 @@ span {
 
 
 
-
 @media screen and (max-width:1200px){
     
+    .iconMenu  .menu{
+        display: none;
+    }
     .header{
 
         font-size: 20px;
         font-weight: bold;
     }
+    
     .navbar {
         display: flex;
     }
@@ -390,33 +421,33 @@ span {
     }
 
 }
-@media screen and (max-width:990px){
-   
 
-    .cart-item{
-        display: block;
+
+
+@media screen and (max-width:992px) {
+    .iconMenu  .menu{
+        display: none;
     }
-    .cart-items{
-        position: relative;
+    .header{
+
+        font-size: 20px;
+        font-weight: bold;
     }
-    .bars{
-        position: absolute;
-        top:0;
-    }
-   
+    
     .navbar {
         display: flex;
     }
-    .header{
-        font-size: 17px;
-        font-weight: bold;
-    }
+  
     .navbar a{
         margin-right: 10px;
 
+
+    }
+    .logo{
+      display: none;
     }
     .contucticon{
-        padding:10px;
+        padding-left:10px;
     }
     .cart-counter {
         margin-right: 10px;
@@ -430,11 +461,11 @@ span {
     }
     .contuct {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     } .services {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .about-box {
         display: grid;
@@ -445,13 +476,23 @@ span {
     .section{
         padding-top: 10%;
     }
-    
-    
+    .cart-item{
+        display: block;
+    }
+    .cart-items{
+        position: relative;
+    }
+    .bars{
+        position: absolute;
+        top:0;
+    }
+   
+
+
 
 }
-
-@media screen and (max-width:760px) {
-    .menu {
+@media screen and (max-width:768px) {
+    .iconMenu .menu {
         display: block;
         background-color: red;
         font-size: 28px;
@@ -584,7 +625,7 @@ span {
 
 }
 @media screen and (max-width:600px) {
-    .menu {
+    .iconMenu .menu {
         display: block;
         background-color: red;
         font-size: 28px;
@@ -715,4 +756,134 @@ span {
 
 
 
+}
+
+@media screen and (max-width:400px) {
+    .iconMenu .menu {
+        display: block;
+        background-color: red;
+        font-size: 28px;
+        border-radius: 10px;
+        padding: 10px;
+        color: white;
+        order:1;
+
+    }
+   
+    .cart-counter {
+        order:-1;
+    }
+
+    .header {
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+    }
+
+    .logo{
+        order:-3;
+        display: none;
+    }
+    .contucticon {
+        order:-2;
+        padding: 1px;
+       
+    }
+
+    .cart-item img {
+        width: 100%;
+        border-radius: 32px;
+    }
+    .bars{
+        color:blue;
+        position: absolute;
+        top:10px;
+    }
+
+    .services-box:hover{
+        box-shadow: 10px 0 300px rgba(236, 237, 245, 0.5);  
+    }
+    .cart-items {
+        border-radius: 32px;
+        position: relative;
+        width: 100%;
+    }
+
+    .cart-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:10px;
+        width: 100%;
+
+    }
+
+    .navbar.open {
+        display: block;
+        position: absolute;
+        height: 100px;
+        width: 160%;
+        top: 100%;
+
+
+    }
+
+    .navbar a:hover {
+        color: blue;
+    }
+
+    .navbar a {
+        display: block;
+        height: 60%;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-color: var(--main-bg);
+    }
+
+    .navbar {
+        display: none;
+        position: relative;
+    }
+
+    .section {
+        padding-top: 100px;
+    }
+
+    .about-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .about-title {
+        order: -1
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services-box {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contuct {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .up {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
 }

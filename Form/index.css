@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000b22;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #163ff3;
+    padding: 20px;
+    text-align: center;
+    width: 380px;
+    border-radius: 20px;
+    box-shadow: 10px 0 200px rgba(206, 192, 201, 0.6);
+}
+
+.form-control {
+    text-align: center;
+    position: relative;
+
+}
+
+.form-control input {
+    padding: 10px 40px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    color:white;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-control i {
+    position: absolute;
+    top:45%;
+    right: 10%;
+    font-weight: bold;
+    color:#00246d;
+    visibility: hidden;
+}
+.btn-login{
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding:8px 30px;
+    border-radius: 12px;
+    outline:none;
+    border: none;
+}
+.btn-login:hover{
+    color:lightblue;
+    background-color: #00246d;
+}
+.form-control.success input{
+    border: 2px solid greenyellow;
+    color:green;
+}
+.form-control.error input{
+    border: 2px solid rgb(242, 6, 6);
+    color:red;
+}
+.form-control.error .c{
+    color:red;
+}
+.form-control.success .x{
+    color:greenyellow;
+}
+
+.form-control small{
+    color:red;
+    font-size: 18px;
+  
+}

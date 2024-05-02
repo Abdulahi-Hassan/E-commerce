@@ -3,6 +3,7 @@
 
 <head>
    <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Responsive Website</title>
@@ -19,23 +20,20 @@
          <a href="#product">Product</a>
          <a href="#contuct">Contuct</a>
       </nav>
-
-
-      <div class="cart-counter" >
-         <a href="#" id="home" style="color:white"> <i class="fa fa-cart-shopping">s</i>
+      <div class="cart-counter">
+         <a href="#" id="home" style="color:white"> <i class="fa fa-shopping-cart"></i>
          </a>
          <a href="#" id="home" style="color:white">
-            <p class="cart-count">0</p> 
-
+            <p class="cart-count">0</p>
          </a>
 
       </div>
       <div class="iconMenu">
-         <i class="menu" class="fa fa-bars">X</i>
+         <i class="fa fa-bars menu"></i>
       </div>
       <div class="contucticon">
-         <p><a href="../../Javascript/Form/index.html">Sigin</a></p>
-         <p><a href="../../Javascript/Form/index.html">SigUp</a></p>
+         <p><a href="../Form/index.html" class="fa fa-sign-in">Sigin</a></p>
+         <p><a href="../Form/main.html" class="fa fa-sign-out">SigUp</a></p>
       </div>
    </header>
    <!-- End Header -->
@@ -43,15 +41,22 @@
    <!--Start Carts -->
    <div class="section">
       <div class="cart-items">
-         <i class="bars" class="fa fa-bars">X</i>
+         <i class="remove fa fa-times  "></i>
          <div class="totalamount">
             <h1>TotalAmount : $</h1>
             <h1 class="total">0</h1>
          </div>
-         <div class="button">
-            <button class="Checktout"><a href="">Checktout</a></button>
-            <button class="Clear"><a href="">Clear</a></button>
-         </div>
+         <form>
+            <input type="radio" checked class="payment" name="payment" id="Paypal" paymentmethod="Paypal"><label
+               for="Paypal">Paypal</label>
+            <input type="radio" name="payment" class="paym" id="Evc" paymentmethod="Evc"><label for="Evc">Evc</label>
+
+            <div class="button">
+               <button class="Checktout"><a href="">Checktout</a></button>
+               <button class="Clear"><a href="">Clear</a></button>
+            </div>
+         </form>
+
       </div>
    </div>
    <!--End Carts -->
@@ -68,7 +73,7 @@
 
          </div>
          <div class="about-image home-image ">
-            <img src="../../Javascript/E-commerce/Images/f.png" width="200" alt="">
+            <img src="../images/fdd.png" width="200" alt="">
          </div>
       </div>
    </div>
@@ -81,7 +86,7 @@
          <div class="services-box Product">
             <input type="hidden" id="id" value="1">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -89,13 +94,13 @@
             <div class="services-content Product-price">
                <h2>$100</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="2">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -103,13 +108,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="3">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -117,13 +122,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="4">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -131,13 +136,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="5">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -145,13 +150,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="6">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -159,13 +164,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="7">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -173,13 +178,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="8">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -187,13 +192,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="9">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -201,13 +206,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="10">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -215,13 +220,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="11">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -229,13 +234,13 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
          <div class="services-box Product">
             <input type="hidden" id="id" value="12">
             <div class="services-image Product-img">
-               <img class="Product-image" src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img class="Product-image" src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title Product-name">
                <h1>UX/UD Design</h1>
@@ -243,7 +248,7 @@
             <div class="services-content Product-price">
                <h2>$10</h2>
             </div>
-            <button class="btn Product-btn">Add Cart</button>
+            <button class="btn Product-btn">Buy Now</button>
 
          </div>
       </div>
@@ -255,7 +260,7 @@
       <h1 class="title">Ab<span>out</span></h1>
       <div class="about-box">
          <div class="about-image">
-            <img src="../../Javascript/E-commerce/Images/fdd.png" alt="">
+            <img src="../images/fdd.png" alt="">
          </div>
          <div class="about-title">
             <h1>Web <span>Developer</span></h1>
@@ -277,7 +282,7 @@
                <i class="fa fa-bars">X</i>
             </div>
             <div class="services-image">
-               <img src="../../Javascript/E-commerce/Images/f.png" width="300" alt="">
+               <img src="../images/f.png" width="300" alt="">
             </div>
             <div class="services-title">
                <h1>UX/UD Design</h1>
@@ -294,7 +299,7 @@
                <i class="fa fa-bars">X</i>
             </div>
             <div class="services-image">
-               <img src="../../Javascript/E-commerce/Images/fdd.png" width="300" alt="">
+               <img src="../images/fdd.png" width="300" alt="">
             </div>
             <div class="services-title">
                <h1>UX/UD Design</h1>
@@ -311,7 +316,7 @@
                <i class="fa fa-bars">X</i>
             </div>
             <div class="services-image">
-               <img src="../../Javascript/E-commerce/Images/i.png" width="300" alt="">
+               <img src="../images/i.png" width="300" alt="">
             </div>
             <div class="services-title">
                <h1>UX/UD Design</h1>
@@ -328,7 +333,7 @@
                <i class="fa fa-bars">X</i>
             </div>
             <div class="services-image">
-               <img src="../../Javascript/E-commerce/Images/e.png" width="300" alt="">
+               <img src="../images/e.png" width="300" alt="">
             </div>
             <div class="services-title">
                <h1>UX/UD Design</h1>
@@ -345,7 +350,7 @@
                <i class="fa fa-bars">X</i>
             </div>
             <div class="services-image">
-               <img src="../../Javascript/E-commerce/Images/h.png" width="300" alt="">
+               <img src="../images/h.png" width="300" alt="">
             </div>
             <div class="services-title">
                <h1>UX/UD Design</h1>
@@ -362,7 +367,7 @@
                <i class="fa fa-bars">X</i>
             </div>
             <div class="services-image">
-               <img src="../../Javascript/E-commerce/Images/fdd.png" width="300" alt="">
+               <img src="../images/fdd.png" width="300" alt="">
             </div>
             <div class="services-title">
                <h1>UX/UD Design</h1>
@@ -409,9 +414,10 @@
 
          <!-- <p><span>Developer</span> Hubal-Tech</p> -->
       </div>
-      <p class="copy">Copyright&copy; Hubal AllRights Reserved</p>
+      <p class="copy">Copyright&copy; Hubal AllRights Reserved. <br> <br>Developer By <span>Hubal-</span>Tech
+      </p>
       <div class="up" id="home">
-         <a href="#">up</a>
+         <a href="#"><i class="fa fa-angle-up"></i></a>
       </div>
    </div>
    <!-- End Contuct -->
